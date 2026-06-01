@@ -1,0 +1,125 @@
+html{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    color: white;
+}
+
+/* فيديو الخلفية */
+#bg-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* الهيدر */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    color: white;
+}
+
+/* العنوان */
+h1{
+    color: #7df9ff;
+    text-shadow:
+        0 0 5px #7df9ff,
+        0 0 10px #7df9ff,
+        0 0 20px #00bfff;
+}
+
+/* الليفل والسكور */
+output{
+    color: #7df9ff;
+    font-size: 24px;
+    text-shadow:
+        0 0 5px #7df9ff,
+        0 0 10px #00bfff;
+}
+
+/* المحتوى */
+main{
+    display: flex;
+    gap: 2rem;
+    padding: 20px;
+}
+
+/* صندوق السؤال */
+form{
+    flex: 1;
+    zoom: 2;
+
+    background: rgba(0,0,0,0.45);
+    padding: 20px;
+    border-radius: 15px;
+
+    color: #7df9ff;
+    text-shadow:
+        0 0 5px #7df9ff,
+        0 0 10px #00bfff;
+}
+
+/* السؤال */
+p{
+    font-size: 28px;
+    font-weight: bold;
+    color: #7df9ff;
+
+    text-shadow:
+        0 0 5px #7df9ff,
+        0 0 10px #7df9ff,
+        0 0 20px #00bfff,
+        0 0 40px #00bfff;
+}
+
+/* مربع الكتابة */
+input{
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid #4da6ff;
+}
+
+/* زر السبمت */
+button{
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: none;
+    background: #4da6ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #1f8fff;
+}
+
+/* فيديو السؤال */
+#videoPlayer{
+    flex: 1;
+    width: 100%;
+    border: 3px solid #4da6ff;
+    border-radius: 15px;
+
+    box-shadow:
+        0 0 10px #4da6ff,
+        0 0 25px #4da6ff;
+}
+
+/* للجوال */
+@media screen and (max-width:600px){
+    main{
+        flex-direction: column;
+    }
+
+    form{
+        zoom: 1;
+    }
+}
